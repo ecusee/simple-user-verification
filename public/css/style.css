@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    margin: 0;
+    background-color: #9b59b6;
+    font-family: 'Open Sans', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-page-container {
+    max-width: 100%;
+    background: white;
+    height: 670px;
+    width: 90%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.buttons-container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.buttons {
+    width: 80%;
+    height: 50px;
+    background-color: #9b59b6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.create-account {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.header {
+    padding: 20px 30px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.header h2 {
+    margin: 0;
+}
+
+.form {
+    padding: 20px 40px;
+    width: 100%;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+}
+
+.form-control.success input {
+    border-color: #2ecc71;
+}
+
+.form-control.error input {
+    border-color: #e74c3c;
+}
+
+.form-control i {
+    visibility: hidden;
+    position: absolute;
+    top: 37px;
+    right: 10px;
+}
+
+.form-control.success i.fa-check-circle {
+    visibility: visible;
+    color: #2ecc71;
+}
+
+.form-control.error i.fa-exclamation-circle {
+    visibility: visible;
+    color: #e74c3c;
+}
+
+.form-control small {
+
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.form-control.error small {
+    visibility: visible;
+    color: #e74c3c;
+}
+
+.form button {
+    background-color: #8e44ad;
+    border: 2px solid #8e44ad;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    font-family: inherit;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+}
+
+.success-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.success-page img {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    top: -40px;
+}
+
+.success-page .message {
+    font-family: inherit;
+    text-align: center;
+}
+
+.message-container {
+    width: 90%;
+    height: auto;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    margin-top: 50px;
+}
